@@ -1,0 +1,43 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Default/Light Mode */
+  --bg-color-primary: #f6f6f6;
+  --bg-color-secondary: #c3c3c3;
+  --text-primary: #111;
+  --text-secondary: #3b3b3b;
+  --cta-primary: #1515b6;
+  --cta-secondary: #2424e4;
+}
+
+/* Dark Mode */
+data-theme[theme-color="dark"] {
+  --bg-color-primary: #111;
+  --bg-color-secondary: #3b3b3b;
+  --text-primary: #f6f6f6;
+  --text-secondary: #c3c3c3;
+  --cta-primary: #1515b6;
+  --cta-secondary: #2424e4;
+}
+
+body {
+  background-color: var(--bg-color-primary);
+  color: var(--text-primary);
+  font-family: "futura", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header */
+nav {
+  margin-left: 0;
+}
+/* Main */
+/* Footer */
