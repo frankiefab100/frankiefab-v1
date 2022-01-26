@@ -1,12 +1,14 @@
-/* Global */
-* {
+/* -- Global -- */
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 :root {
-  /* Default/Light Mode */
+  /* -- Default/Light Mode -- */
   --bg-color-primary: #f6f6f6;
   --bg-color-secondary: #c3c3c3;
   --text-primary: #111;
@@ -15,7 +17,7 @@
   --cta-secondary: #2424e4;
 }
 
-/* Dark Mode */
+/* -- Dark Mode -- */
 data-theme[theme-color="dark"] {
   --bg-color-primary: #111;
   --bg-color-secondary: #3b3b3b;
@@ -35,9 +37,4 @@ body {
   height: 100%;
 }
 
-/* Header */
-nav {
-  margin-left: 0;
-}
-/* Main */
-/* Footer */
+/* -- Header -- */
