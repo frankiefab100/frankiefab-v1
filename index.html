@@ -10,14 +10,38 @@
     />
     <meta
       name="keywords"
-      content="Web Development, UX Design, Smart Contracts and DApp Development"
+      content="Web Design, Software Development, Graphic Design, Product Design, Smart Contracts and DApp Development"
     />
-    >
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Futura|Merriweather&display=swap"
-      rel="stylesheet"
+
+    <!-- Facebook Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frankiefab.netlify.app" />
+    <meta property="og:title" content="Franklin Ohaegbulam Personal Website" />
+    <meta
+      property="og:description"
+      content="Franklin Ohaegbulam is a Frontend/UI Engineer, Blockchain Developer and Visual Designer passionate about Open Source Software, User Experience, Web Animation, Accessibility, and Inclusive Design."
     />
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/"
+    />
+
+    <!-- Twitter Meta Tags  -->
+    <meta property="twitter:card" content="Portfolio Website" />
+    <meta property="twitter:url" content="https://frankiefab.netlify.app" />
+    <meta
+      property="twitter:title"
+      content="Franklin Ohaegbulam Personal Website"
+    />
+    <meta
+      property="twitter:description"
+      content="Franklin Ohaegbulam is a Frontend/UI Engineer, Blockchain Developer and Visual Designer passionate about Open Source Software, User Experience, Web Animation, Accessibility, and Inclusive Design."
+    />
+    <meta
+      property="twitter:image"
+      content="https://user-images.githubusercontent.com/"
+    />
+
     <!-- Favicons -->
     <link rel="icon" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
     <link rel="icon" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
@@ -32,30 +56,564 @@
       sizes="192x192"
       href="./images/favicon/favicon-192x192.png"
     />
+    <!-- Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Futura|Roboto+Mono:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Franklin Ohaegbulam - Personal Website</title>
+    <title>Franklin Ohaegbulam | Personal Website</title>
   </head>
   <body>
+    <!-- <div class="preloader">
+    </div> -->
+
+    <!-- Header -->
     <header>
-      <nav class="top-nav">
-        <div class="logo">
-          <img src="./assets/logo-dark.png" alt="Frankiefab custom logo" />
-        </div>
-        <div class="nav-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Blog</a></li>
-            <li>
-              <a href="#"><button>Contact</button></a>
-            </li>
-          </ul>
-        </div>
-        <div class="theme-switch">
-          <img src="./images/icons/sun.png" alt="dark mode switch toggle" />
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Frankiefab custom logo" />
+      </div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li>
+            <button class="resume-btn">
+              <a id="resume" href="./assets/Frankin-Ohaegbulam-Resume.pdf"
+                >Resume</a
+              >
+            </button>
+          </li>
+
+          <!-- Dark Mode Switch -->
+          <span class="theme-switch">
+            <img
+              class="darken"
+              src="./assets/images/icons/moon.svg"
+              alt="dark mode"
+            />
+            <!-- <img
+              class="brighten"
+              src="./assets/images/icons/sun.svg"
+              alt="light mode"
+            /> -->
+          </span>
+
+          <!-- <div class="theme-switch">
+            <i class="fab fas fa-moon" id="theme-btn"></i>
+          </div> -->
+        </ul>
+        <!-- Mobile Hamburger Menu -->
+        <div class="hamburger-menu">
+          <div class="bar"></div>
         </div>
       </nav>
     </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="left">
+          <span>Hi, I'm Franklin 👋</span>
+          <h1>Frontend Engineer</h1>
+          <!-- <h1>Visual Design</h1>
+        <h1>Blockchain Developer</h1> -->
+          <p>
+            Experienced in building functional web applications and designing
+            accessible digital products.
+          </p>
+          <a href="#"
+            >See Why You should Work With Me
+            <i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- About Me -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="photo-wrapper">
+          <img class="photo" src="./assets/images/profile-photo.jpg" alt="" />
+        </div>
+        <div class="background">
+          <h2 class="title">Background</h2>
+          <h4 class="subtitle">A bit About Me</h4>
+          <p>
+            I'm a self-taught web developer and visual designer with experience
+            in designing new features from ideation to production,
+            implementation of wireframes and design flows into high performance
+            software applications.
+          </p>
+          <p>
+            I take into consideration search engine optimization, accessibility
+            and user experience while writing reusable and efficient code.
+          </p>
+          <p>
+            I'm passionate about Open Source Software (OSS) which has lead to my
+            active contribution in FOSS communities like
+            <a href="">Community Pro</a>, <a href="">Chryz Hub</a>,
+            <a href="">Eddie Hub</a> and
+            <a href="">Design &amp; Code Community</a>.
+          </p>
+          <p>
+            Currently, I'm exploring the Blockchain Web3 space and belong to
+            some exciting Decentralized Autonomous Organizations
+            <a href="">DeveloperDAO</a>, <a href="">ScribeDAO</a>,
+            <a href="">PadawaDAO</a>, <a href="">OdysseyDAO</a>,
+            <a href="">EthernautDAO</a>, <a href="">WebXDAO</a>; to mention but
+            a few.
+          </p>
+        </div>
+      </div>
+      <div class="technologies">
+        <h4>Some of the tools and technologies in my skillset:</h4>
+        <div class="tools">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul>
+            <li>SASS</li>
+            <li>Javascript</li>
+            <li>React</li>
+          </ul>
+          <ul>
+            <li>NPM</li>
+            <li>Yarn</li>
+            <li>Git</li>
+          </ul>
+          <ul>
+            <li>Figma</li>
+            <li>Adobe Photoshop</li>
+            <li>Corel Draw</li>
+          </ul>
+          <ul>
+            <li>Markdown</li>
+            <li>Miro</li>
+            <li>Notion</li>
+          </ul>
+          <ul>
+            <li>Netlify</li>
+            <li>Wordpress</li>
+            <li>Solidity</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="project" id="project">
+      <div class="project-container">
+        <div class="text">
+          <h2 class="title" data-title="My works">Featured Projects</h2>
+          <p>Some Projects I have worked on</p>
+        </div>
+
+        <div class="project-container">
+          <div class="filter">
+            <button class="filter-btn active" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".design">Design</button>
+            <button class="filter-btn" data-filter=".dev">Software Dev</button>
+            <button class="filter-btn" data-filter=".blockchain">
+              Blockchain
+            </button>
+          </div>
+
+          <div class="projects">
+            <div class="project-box webdev">
+              <div class="project-link">
+                <a href="https://" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/icons/link.svg" alt="link icon" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/images/icons/github.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </div>
+
+              <div class="project-content">
+                <h3 class="title">Glassmorphic Weather Forecast App</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  itaque nemo, recusandae amet facilis perferendis.
+                </p>
+              </div>
+              <div class="overlay">
+                <div class="stack">
+                  <span>HTML CSS JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box webdev">
+              <div class="project-link">
+                <a href="https://" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/icons/link.svg" alt="link icon" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/images/icons/github.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </div>
+
+              <div class="project-content">
+                <h3 class="title">Glassmorphic Weather Forecast App</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  itaque nemo, recusandae amet facilis perferendis.
+                </p>
+              </div>
+              <div class="overlay">
+                <div class="stack">
+                  <span>HTML CSS JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box webdev">
+              <div class="project-link">
+                <a href="https://" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/icons/link.svg" alt="link icon" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/images/icons/github.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </div>
+
+              <div class="project-content">
+                <h3 class="title">Glassmorphic Weather Forecast App</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  itaque nemo, recusandae amet facilis perferendis.
+                </p>
+              </div>
+              <div class="overlay">
+                <div class="stack">
+                  <span>HTML CSS JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box design">
+              <div class="project-link">
+                <a href="https://" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/icons/link.svg" alt="link icon" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/images/icons/github.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </div>
+
+              <div class="project-content">
+                <h3 class="title">Glassmorphic Weather Forecast App</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  itaque nemo, recusandae amet facilis perferendis.
+                </p>
+              </div>
+              <div class="overlay">
+                <div class="stack">
+                  <span>HTML CSS JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box blockchain">
+              <div class="project-link">
+                <a href="https://" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/icons/link.svg" alt="link icon" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/images/icons/github.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </div>
+
+              <div class="project-content">
+                <h3 class="title">Glassmorphic Weather Forecast App</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  itaque nemo, recusandae amet facilis perferendis.
+                </p>
+              </div>
+              <div class="overlay">
+                <div class="stack">
+                  <span>HTML CSS JavaScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-box design">
+              <div class="project-link">
+                <a href="https://" target="_blank" rel="noopener noreferrer">
+                  <img src="./assets/images/icons/link.svg" alt="link icon" />
+                </a>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="./assets/images/icons/github.svg"
+                    alt="github icon"
+                  />
+                </a>
+              </div>
+
+              <div class="project-content">
+                <h3 class="title">Glassmorphic Weather Forecast App</h3>
+                <p class="details">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                  itaque nemo, recusandae amet facilis perferendis.
+                </p>
+              </div>
+              <div class="overlay">
+                <div class="stack">
+                  <span>HTML CSS JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="project-btn">
+          See More Work
+          <i class="fas fa-long-arrow-alt-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog" id="blog">
+      <div class="blog-container">
+        <h2 class="title">Latest Articles &amp; Blog Posts</h2>
+
+        <div class="article-wrapper">
+          <div class="article">
+            <img
+              class="thumbnail"
+              src="./assets/images/projects/blog-img.jpg"
+              alt="article banner"
+            />
+            <div class="article-preview">
+              <h6 class="article-title">Article Title</h6>
+              <p class="article-intro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci, incidunt!
+              </p>
+              <a href="./src/blog.html">Read More</a>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              class="thumbnail"
+              src="./assets/images/projects/blog-img.jpg"
+              alt="article banner"
+            />
+            <div class="article-preview">
+              <h6 class="article-title">Article Title</h6>
+              <p class="article-intro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at
+                obcaecati, ea similique quia odio!
+              </p>
+              <a href="./src/blog.html">Read More</a>
+            </div>
+          </div>
+
+          <div class="article">
+            <img
+              class="thumbnail"
+              src="./assets/images/projects/blog-img.jpg"
+              alt="article banner"
+            />
+            <div class="article-preview">
+              <h6 class="article-title">Article Title</h6>
+              <p class="article-intro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at
+                obcaecati, ea similique quia odio!
+              </p>
+              <a href="./src/blog.html">Read More</a>
+            </div>
+          </div>
+        </div>
+        <button class="blog-btn">
+          Explore Blog
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="form-container">
+        <div class="form-text">
+          <h2 class="title">Get In Touch</h2>
+          <h4 class="subtitle">Say Hello!</h4>
+          <p>
+            Do you have a project or want to chat with me? <br />
+            Feel free to send me a message, I will definitely reply.
+          </p>
+        </div>
+        <form id="contact-form" action="contact.html" data-netlify="true">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Type your message here..."
+            rows="8"
+          ></textarea>
+          <button class="contact-btn">SEND MESSAGE</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="email">
+        <i class="fas fa-envelope"></i>
+        <a
+          href="mailto:ohaegbulamfrank@gmail.com"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          >ohaegbulamfrank@gmail.com</a
+        >
+      </div>
+      <!-- <div class="scrollup">
+        <a href="#home" class="scroll-btn"
+          ><span class="fas fa-angle-up"></span
+        ></a>
+      </div> -->
+      <div class="footer-socials">
+        <a
+          href="https://www.twitter.com/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/twitter.svg" alt="twitter icon" />
+        </a>
+
+        <a
+          href="https://www.github.com/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/github.svg" alt="github icon" />
+        </a>
+
+        <a
+          href="https://www.codepen.com/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/codepen.svg" alt="codepen icon" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/linkedin.svg" alt="linkedin icon" />
+        </a>
+
+        <a
+          href="https://frankiefab.hashnode.dev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/hashnode.svg" alt="hashnode icon" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/instagram.svg" alt="instagram icon" />
+        </a>
+
+        <a
+          href="https://www.dribbble.com/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/dribbble.svg" alt="dribbble icon" />
+        </a>
+
+        <a
+          href="https://www.behance.com/frankiefab100"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./assets/images/icons/behance.svg" alt="behance icon" />
+        </a>
+      </div>
+      <p class="copyright">
+        Copyright 2022 &copy; Franklin Ohaegbulam - All Right Reserved.
+      </p>
+    </footer>
+
+    <div class="scrollup">
+      <a href="" class="scroll-btn"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>

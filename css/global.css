@@ -1,0 +1,77 @@
+/* -- Global -- */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* -- Default/Light Mode -- */
+  --bg-color-primary: #f6f6f6;
+  --bg-color-secondary: #c3c3c3;
+  --text-primary: #111;
+  --text-secondary: #3b3b3b;
+  --cta-primary: #1515b6;
+  --cta-secondary: #2424e4;
+}
+
+/* -- Dark Mode -- */
+data-theme[theme-color="dark"] {
+  --bg-color-primary: #111;
+  --bg-color-secondary: #3b3b3b;
+  --text-primary: #f6f6f6;
+  --text-secondary: #c3c3c3;
+  --cta-primary: #1515b6;
+  --cta-secondary: #2424e4;
+}
+
+/* Dark Mode switch */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 26px;
+  position: relative;
+  width: 42px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.fa-long-arrow-alt-right,
+.fa-chevron-right {
+  padding-left: 10px;
+}
+
+.fa-long-arrow-alt-right:hover,
+.fa-chevron-right:hover {
+  padding-left: 12px;
+}
+
+.scroll-btn.active {
+  pointer-events: auto;
+  bottom: 32px;
+  opacity: 1;
+}
+
+.scroll-btn:hover {
+  background-color: #222;
+}
+
+.scroll-btn:hover i {
+  color: #f6f6f6;
+  transform: translateY(-5px);
+}
+
+/* -- Media Queries-- */
