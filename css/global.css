@@ -114,7 +114,7 @@ a {
 }
 
 /* -- Media Queries-- */
-@media screen and (max-width: 768px) {
+@media (max-width: 700px) {
   nav {
     position: relative;
     display: block;
@@ -131,14 +131,20 @@ a {
     position: absolute;
     margin: 0px;
     top: 0;
-    height: 500px;
+    height: 600px;
     width: 100%;
     padding-top: -50px;
     right: -820px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav ul {
+    margin-right: 0 !important;
   }
 
   ul li {
     margin-top: 40px;
+    padding: 0 30px !important;
   }
 
   nav ul.active {
@@ -149,16 +155,16 @@ a {
     opacity: 5;
   }
 
-  nav ul.active .hamburger-menu .bar {
+  .hamburger-menu.active .bar {
     background-color: transparent;
     transform: rotate(360deg);
   }
 
-  nav ul.active .hamburger-menu .bar:before {
+  .hamburger-menu.active .bar:before {
     transform: translateY(0) rotate(45deg);
   }
 
-  nav ul.active .hamburger-menu .bar:after {
+  .hamburger-menu.active .bar:after {
     transform: translateY(0) rotate(-45deg);
   }
 
@@ -216,6 +222,89 @@ a {
   }
 
   .article-wrapper {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) and (min-width: 350px) {
+  nav {
+    padding: 0 30px !important;
+  }
+
+  .hero {
+    padding: 70px 30px 70px !important;
+  }
+
+  .left p {
+    width: 100%;
+  }
+
+  .about {
+    padding: 0 30px !important;
+    width: 100% !important;
+  }
+
+  .about p {
+    font-size: 0.8rem;
+    width: 100% !important;
+  }
+
+  .photo {
+    width: 200px;
+  }
+
+  .tools li {
+    font-size: 0.8rem;
+  }
+
+  .projects {
+    padding: 20px 30px !important;
+  }
+
+  .project-box {
+    max-height: 240px !important;
+  }
+
+  .project-content {
+    margin-top: 0 !important;
+  }
+
+  .project-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .project-content p {
+    font-size: 0.8rem;
+  }
+
+  .project-link {
+    font-size: 0.3px !important;
+  }
+
+  .article {
+    margin: 0 auto !important;
+    width: 100% !important;
+  }
+
+  .article-title {
+    font-size: 1rem;
+  }
+
+  .article-wrapper {
+    padding: 5px 30px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .contact {
+    margin: 40px 30px !important;
+  }
+
+  #contact-form {
+    margin: 0 auto 30px !important;
+  }
+
+  .form-text p {
     font-size: 0.8rem;
   }
 }

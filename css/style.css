@@ -333,8 +333,18 @@ main {
 
 .project-content {
   position: relative;
-  margin-top: 30px;
+  margin-top: 0px;
   text-align: left;
+}
+
+.project-content h3 {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  width: 100%;
 }
 
 .project-link {
@@ -380,6 +390,7 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../assets/images/bg-image.png);
   padding: 35px 0 35px;
+  overflow-x: hidden;
 }
 
 .blog-container {
@@ -415,6 +426,7 @@ main {
   background-color: #fff;
   max-width: 380px;
   width: 100%;
+  overflow: hidden;
 }
 
 .article-preview {
@@ -442,6 +454,11 @@ main {
   cursor: pointer;
   outline: none;
   padding: 10px 25px;
+}
+
+.blog-btn a,
+.project-btn a {
+  color: #f6f6f6;
 }
 
 /* -- Contact -- */
