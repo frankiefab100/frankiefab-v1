@@ -74,4 +74,148 @@ a {
   transform: translateY(-5px);
 }
 
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  background-color: #000;
+  transition: 0.5s;
+  width: 2.1rem;
+  height: 3px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  position: absolute;
+  width: 2.1rem;
+  height: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.bar:before {
+  transform: translateY(-9px);
+}
+
+.bar:after {
+  transform: translateY(9px);
+}
+
 /* -- Media Queries-- */
+@media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    background-color: var(--bg-color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    position: absolute;
+    margin: 0px;
+    top: 0;
+    height: 500px;
+    width: 100%;
+    padding-top: -50px;
+    right: -820px;
+  }
+
+  ul li {
+    margin-top: 40px;
+  }
+
+  nav ul.active {
+    position: absolute;
+    right: 0;
+    margin-right: 0;
+    margin-top: 72px;
+    opacity: 5;
+  }
+
+  nav ul.active .hamburger-menu .bar {
+    background-color: transparent;
+    transform: rotate(360deg);
+  }
+
+  nav ul.active .hamburger-menu .bar:before {
+    transform: translateY(0) rotate(45deg);
+  }
+
+  nav ul.active .hamburger-menu .bar:after {
+    transform: translateY(0) rotate(-45deg);
+  }
+
+  .theme-switch {
+    padding-top: 20px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  main {
+    height: auto !important;
+  }
+
+  .hero {
+    padding: 70px 80px 70px !important;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .left {
+    margin-bottom: 50px;
+  }
+
+  .about {
+    padding: 0 80px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  .background {
+    padding-left: 0px !important;
+    padding-top: 50px;
+  }
+
+  .tools {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tools ul li {
+    padding: 0px !important;
+    margin-top: 5px !important;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .article-wrapper {
+    font-size: 0.8rem;
+  }
+}

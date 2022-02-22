@@ -32,8 +32,119 @@
       sizes="192x192"
       href="./images/favicon/favicon-192x192.png"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Franklin Ohaegbulam | Error Page</title>
+    <style>
+      #error {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 120px;
+      }
+
+      .container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .four {
+        font-family: "Roboto Mono", monospace;
+        font-size: 15rem;
+      }
+
+      .zero {
+        position: relative;
+        border-radius: 50%;
+        background-color: #222;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        display: inline-block;
+      }
+
+      .zero::before {
+        background-color: #3c9;
+        border-radius: 40%;
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        bottom: 100px;
+        left: -50px;
+        animation: waveup 4s linear infinite;
+      }
+
+      @keyframes waveup {
+        0% {
+          transform: rotate(0deg);
+        }
+        60% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .zero::after {
+        background-color: #0c9;
+        border-radius: 30%;
+        content: "";
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        bottom: 100px;
+        left: -50px;
+        opacity: 0.6;
+        animation: wavedown 4s linear infinite;
+      }
+
+      @keyframes wavedown {
+        0% {
+          transform: rotate(0deg);
+        }
+        60% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .text {
+        font-family: "Roboto Mono", monospace;
+        padding: 10px 0;
+      }
+
+      .back-btn a:hover {
+        color: #f6f6f6;
+      }
+    </style>
   </head>
-  <body></body>
+  <body id="error">
+    <div class="container">
+      <div>
+        <span class="four">4</span>
+        <div class="zero"></div>
+        <span class="four">4</span>
+      </div>
+      <div class="content">
+        <h1 class="heading">Page not Found</h1>
+        <p class="text">
+          Whoops..! <br />
+          Sorry, we are not able to find what you were looking for...
+        </p>
+        <button class="back-btn">
+          <a href="../index.html#hero"
+            ><i class="fas fa-chevron-left"></i>Go Back
+          </a>
+        </button>
+      </div>
+    </div>
+  </body>
 </html>

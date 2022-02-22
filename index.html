@@ -80,10 +80,10 @@
 
     <!-- Header -->
     <header>
-      <div class="logo">
-        <img src="./assets/images/logo.png" alt="Frankiefab custom logo" />
-      </div>
       <nav class="nav">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="Frankiefab custom logo" />
+        </div>
         <ul class="nav-links">
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#project">PROJECTS</a></li>
@@ -110,13 +110,10 @@
               alt="light mode"
             /> -->
           </span>
-
-          <!-- <div class="theme-switch">
-            <i class="fab fas fa-moon" id="theme-btn"></i>
-          </div> -->
         </ul>
         <!-- Mobile Hamburger Menu -->
         <div class="hamburger-menu">
+          <!-- <i class="fas fas fa-bars"></i> -->
           <div class="bar"></div>
         </div>
       </nav>
@@ -135,7 +132,7 @@
             Experienced in building functional web applications and designing
             accessible digital products.
           </p>
-          <a href="#"
+          <a href="#about"
             >See Why You should Work With Me
             <i class="fas fa-long-arrow-alt-right"></i>
           </a>
@@ -163,8 +160,8 @@
             and user experience while writing reusable and efficient code.
           </p>
           <p>
-            I'm passionate about Open Source Software (OSS) which has lead to my
-            active contribution in FOSS communities like
+            I'm passionate about Open Source Software (OSS) with active
+            participation in FOSS communities like
             <a href="">Community Pro</a>, <a href="">Chryz Hub</a>,
             <a href="">Eddie Hub</a> and
             <a href="">Design &amp; Code Community</a>.
@@ -443,12 +440,19 @@
               alt="article banner"
             />
             <div class="article-preview">
-              <h6 class="article-title">Article Title</h6>
+              <h6 class="article-title">
+                Learn Blockchain Development By Playing Games
+              </h6>
               <p class="article-intro">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci, incidunt!
+                Learning something new through interactive tutorials can be fun
+                especially for gamers. The interesting thing about that the
+                concept of Gamification was employed as a means of learning. For
+                someone like me, I can get really...
               </p>
-              <a href="./src/blog.html">Read More</a>
+              <a
+                href="https://frankiefab.hashnode.dev/learn-blockchain-development-by-playing-games"
+                >Read More</a
+              >
             </div>
           </div>
 
@@ -459,12 +463,18 @@
               alt="article banner"
             />
             <div class="article-preview">
-              <h6 class="article-title">Article Title</h6>
+              <h6 class="article-title">
+                First timers’ Practical Guide to Open Source Contribution
+              </h6>
               <p class="article-intro">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at
-                obcaecati, ea similique quia odio!
+                An Open Source Software source code is public with everyone
+                having the freedom to understand how the program functions. You
+                can also modify it by fixing issue(s) or bug you...
               </p>
-              <a href="./src/blog.html">Read More</a>
+              <a
+                href="https://medium.com/@frankiefab100/first-timers-practical-guide-to-open-source-contribution-f1ad553ac79"
+                >Read More</a
+              >
             </div>
           </div>
 
@@ -475,12 +485,20 @@
               alt="article banner"
             />
             <div class="article-preview">
-              <h6 class="article-title">Article Title</h6>
+              <h6 class="article-title">
+                WEB OPTIMIZATION - An overview of Search Engine Optimization
+                (SEO)
+              </h6>
               <p class="article-intro">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed at
-                obcaecati, ea similique quia odio!
+                SEO is a common term in digital marketing, advertising and web
+                development industry. The essence of having a website is mainly
+                for marketing or online presence. Search engines such as Google
+                and Bing use...
               </p>
-              <a href="./src/blog.html">Read More</a>
+              <a
+                href="https://dev.to/frankiefab100/web-optimization-an-overview-of-search-engine-optimization-seo-4olk"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
@@ -502,7 +520,11 @@
             Feel free to send me a message, I will definitely reply.
           </p>
         </div>
-        <form id="contact-form" action="contact.html" data-netlify="true">
+        <form
+          id="contact-form"
+          action="https://formsubmit.co/699bf3c059ca389d13c52e4bb1875f2f"
+          method="POST"
+        >
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required />
 
@@ -511,6 +533,8 @@
 
           <label for="email">Email</label>
           <input type="email" name="email" id="email" required />
+
+          <input type="hidden" name="_next" value="./src/contact.html" />
 
           <label for="message">Message</label>
           <textarea
