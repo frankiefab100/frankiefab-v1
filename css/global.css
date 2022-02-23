@@ -309,6 +309,10 @@ sup {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
+  .project-text {
+    top: 15px !important;
+  }
+
   .article-wrapper {
     font-size: 0.8rem;
   }
@@ -333,6 +337,10 @@ sup {
 
   .left p {
     width: 100% !important;
+  }
+
+  .left a {
+    font-size: 0.7rem !important;
   }
 
   .about {
@@ -374,12 +382,16 @@ sup {
     margin-top: 0 !important;
   }
 
-  .project-content h3 {
-    font-size: 0.95rem;
+  .project-text {
+    top: 0 !important;
   }
 
-  .project-content p {
-    font-size: 0.8rem;
+  .project-text h3 {
+    font-size: 0.85rem !important;
+  }
+
+  .project-text p {
+    font-size: 0.45rem !important;
   }
 
   .project-link {

@@ -331,13 +331,14 @@ main {
 }
 
 .project-text h3 {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .project-text p {
   font-family: "Roboto Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   margin: 10px 0;
+  line-height: 1.4;
 }
 
 .project-text .stack {
@@ -351,6 +352,7 @@ main {
   display: flex;
   padding: 5px;
 }
+
 .project-link img {
   background-color: #fff;
   border-radius: 10px;
