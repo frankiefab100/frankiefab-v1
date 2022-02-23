@@ -98,26 +98,37 @@
           </li>
 
           <!-- Dark Mode Switch -->
-          <span class="theme-switch">
+          <div class="theme-switch">
+            <input type="checkbox" id="toggle-switch" />
+            <label class="theme-icons" for="toggle-switch">
+              <img
+                class="darken"
+                src="./assets/images/icons/moon.svg"
+                alt="dark mode"
+              />
+              <img
+                class="brighten"
+                src="./assets/images/icons/sun.svg"
+                alt="light mode"
+              />
+            </label>
+          </div>
+          <!-- <span class="theme-switch">
             <img
               class="darken"
               src="./assets/images/icons/moon.svg"
               alt="dark mode"
             />
-            <!-- <img
+            <img
               class="brighten"
               src="./assets/images/icons/sun.svg"
               alt="light mode"
-            /> -->
-          </span>
+            />
+          </span> -->
         </ul>
         <!-- Mobile Hamburger Menu -->
         <div class="hamburger-menu">
-          <!-- <i class="fas fas fa-bars"></i> -->
           <div class="bar"></div>
-          <!-- <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span> -->
         </div>
       </nav>
     </header>
@@ -165,17 +176,27 @@
           <p>
             I'm passionate about Open Source Software (OSS) with active
             participation in FOSS communities like
-            <a href="">Community Pro</a>, <a href="">Chryz Hub</a>,
-            <a href="">Eddie Hub</a> and
-            <a href="">Design &amp; Code Community</a>.
+            <a href="" target="_blank" rel="noopener noreferrer"
+              >Community Pro</a
+            >,
+            <a href="" target="_blank" rel="noopener noreferrer">Chryz Hub</a>,
+            <a href="" target="_blank" rel="noopener noreferrer">Eddie Hub</a>
+            and
+            <a href="" target="_blank" rel="noopener noreferrer"
+              >Design &amp; Code Community</a
+            >.
           </p>
           <p>
             Currently, I'm exploring the Blockchain Web3 space and belong to
             some exciting Decentralized Autonomous Organizations
-            <a href="">DeveloperDAO</a>, <a href="">ScribeDAO</a>,
-            <a href="">PadawaDAO</a>, <a href="">OdysseyDAO</a>,
-            <a href="">EthernautDAO</a>, <a href="">WebXDAO</a>; to mention but
-            a few.
+            <a href="" target="_blank" rel="noopener noreferrer">DeveloperDAO</a
+            >,
+            <a href="" target="_blank" rel="noopener noreferrer">ScribeDAO</a>,
+            <a href="" target="_blank" rel="noopener noreferrer">PadawaDAO</a>,
+            <a href="" target="_blank" rel="noopener noreferrer">OdysseyDAO</a>,
+            <a href="" target="_blank" rel="noopener noreferrer">EthernautDAO</a
+            >, <a href="" target="_blank" rel="noopener noreferrer">WebXDAO</a>;
+            to mention but a few.
           </p>
         </div>
       </div>
@@ -433,13 +454,13 @@
     <!-- Blog -->
     <section class="blog" id="blog">
       <div class="blog-container">
-        <h2 class="title">Latest Articles &amp; Blog Posts</h2>
+        <h2 class="title">Latest Articles</h2>
 
         <div class="article-wrapper">
           <div class="article">
             <img
               class="thumbnail"
-              src="./assets/images/projects/blog-img.jpg"
+              src="./assets/images/projects/blog-img1.jpeg"
               alt="article banner"
             />
             <div class="article-preview">
@@ -454,6 +475,8 @@
               </p>
               <a
                 href="https://frankiefab.hashnode.dev/learn-blockchain-development-by-playing-games"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Read More</a
               >
             </div>
@@ -462,7 +485,7 @@
           <div class="article">
             <img
               class="thumbnail"
-              src="./assets/images/projects/blog-img.jpg"
+              src="./assets/images/projects/blog-img2.png"
               alt="article banner"
             />
             <div class="article-preview">
@@ -476,6 +499,8 @@
               </p>
               <a
                 href="https://medium.com/@frankiefab100/first-timers-practical-guide-to-open-source-contribution-f1ad553ac79"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Read More</a
               >
             </div>
@@ -484,7 +509,7 @@
           <div class="article">
             <img
               class="thumbnail"
-              src="./assets/images/projects/blog-img.jpg"
+              src="./assets/images/projects/blog-img3.jpg"
               alt="article banner"
             />
             <div class="article-preview">
@@ -500,13 +525,20 @@
               </p>
               <a
                 href="https://dev.to/frankiefab100/web-optimization-an-overview-of-search-engine-optimization-seo-4olk"
+                target="_blank"
+                rel="noopener noreferrer"
                 >Read More</a
               >
             </div>
           </div>
         </div>
         <button class="blog-btn">
-          <a href="https://frankiefab.hashnode.dev">Explore Blog</a>
+          <a
+            href="https://frankiefab.hashnode.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Explore Blog</a
+          >
           <i class="fas fa-chevron-right"></i>
         </button>
       </div>
@@ -562,11 +594,6 @@
           >ohaegbulamfrank@gmail.com</a
         >
       </div>
-      <!-- <div class="scrollup">
-        <a href="#home" class="scroll-btn"
-          ><span class="fas fa-angle-up"></span
-        ></a>
-      </div> -->
       <div class="footer-socials">
         <a
           href="https://www.twitter.com/frankiefab100"
