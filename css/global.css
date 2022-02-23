@@ -60,6 +60,11 @@ a {
   text-decoration: none;
 }
 
+sup {
+  color: #0c9;
+  font-size: 0.55rem;
+}
+
 .fa-long-arrow-alt-right,
 .fa-chevron-right {
   padding-left: 10px;
@@ -203,7 +208,6 @@ a {
     top: 0;
     height: 600px;
     width: 100%;
-    padding-top: -50px;
     right: -820px;
     transition: all 0.5s ease-in-out;
   }
@@ -259,8 +263,16 @@ a {
   }
 
   .left {
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-bottom: 50px !important;
+    margin-top: 30px !important;
+  }
+
+  .left h1 {
+    font-size: 3rem !important;
+  }
+
+  .left p {
+    width: 100% !important;
   }
 
   .about {
@@ -337,12 +349,21 @@ a {
     width: 200px !important;
   }
 
+  .tools {
+    padding-bottom: 25px !important;
+  }
+
   .tools li {
     font-size: 0.8rem;
   }
 
   .projects {
     padding: 20px 30px !important;
+  }
+
+  .filter-btn {
+    padding: 5px 8px !important;
+    margin: 0 5px !important;
   }
 
   .project-box {

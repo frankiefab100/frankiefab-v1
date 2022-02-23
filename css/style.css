@@ -93,8 +93,7 @@ main {
   background-size: 55px 55px;
   background-color: rgba(235, 235, 235, 0.5);
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -102,6 +101,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 160px 80px 0px;
+  /* overflow-x: hidden; */
 }
 
 .hero::after {
@@ -195,15 +195,15 @@ main {
 
 .background p {
   position: relative;
-  animation: slide-down 3s ease-in 1s forwards;
+  animation: slide-up 3s ease-in 1s forwards;
 }
 
-@keyframes slide-down {
+@keyframes slide-up {
   from {
-    top: -80px;
+    bottom: -80px;
   }
   to {
-    top: 10px;
+    bottom: 0px;
   }
 }
 
@@ -221,11 +221,11 @@ main {
 }
 
 .technologies {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 30px 0 0px;
   animation: slide-right 3s ease-in 1s forwards;
-  position: relative;
 }
 
 @keyframes slide-right {
@@ -261,15 +261,12 @@ main {
   width: 100%;
 }
 
-.text {
-  margin-bottom: 10px;
-}
-
 .filter {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .filter-btn {
@@ -293,77 +290,108 @@ main {
   border: 2px solid #222;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 0 40px;
+}
+
 .projects {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 25px;
-  padding: 35px 80px 25px;
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 1rem;
 }
 
-.project-box {
-  background-color: #e4e2e2;
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  padding: 2rem;
-  overflow: hidden;
-  max-height: 340px;
-  height: 100vh;
-  transition: all 0.3s ease-in-out;
+.project-box:hover {
+  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.9);
+  border: 2px solid #0c9;
 }
 
-.project-content {
+.project-details {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
   position: relative;
-  margin-top: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+.project-box:hover .project-details {
+  opacity: 1;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 75px;
   text-align: left;
 }
 
-.project-content h3 {
-  font-size: 1.1rem;
-  width: 100%;
-}
-
-.project-content p {
+.project-text h3 {
   font-size: 0.95rem;
-  width: 100%;
 }
 
-.project-link {
-  display: flex;
-  justify-content: flex-end;
+.project-text p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.65rem;
+  margin: 10px 0;
 }
 
-.project-link a {
-  padding-left: 10px;
-}
-
-.overlay {
-  position: absolute;
-  background-color: #7c7c7c;
-  border-radius: 10px;
-  color: #f6f6f6;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 2rem 3.2rem;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-.overlay p {
-  font-size: 1.15rem;
-  font-weight: 300;
+.project-text .stack {
+  color: #3c9;
+  font-size: 0.6rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
-.project-box:hover .overlay {
-  border: 3px solid #0c9;
-  opacity: 1;
+.project-link a {
+  display: flex;
+  padding: 5px;
+}
+.project-link img {
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 5px;
+  padding: 4px;
+}
+
+.project-box {
+  background: #ccc;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 1rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-box:nth-child(1) {
+  background-image: url(../assets/images/projects/project-weatherapp.png);
+}
+
+.project-box:nth-child(2) {
+  background-image: url(../assets/images/projects/project-business-card.JPG);
+}
+
+.project-box:nth-child(3) {
+  background-image: url(../assets/images/projects/project-CertDApp.JPG);
+}
+
+.project-box:nth-child(4) {
+  background-image: url(../assets/images/projects/project-Scientific_Calculator.png);
+}
+
+.project-box:nth-child(5) {
+  background-image: url(../assets/images/projects/project-google.jpg);
+}
+
+.project-box:nth-child(6) {
+  background-image: url(../assets/images/projects/project-creditcard-form.jpg);
 }
 
 /* -- Blog -- */
