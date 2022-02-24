@@ -9,25 +9,29 @@
 
 :root {
   /* -- Default/Light Mode -- */
-  --bg-color-primary: #f6f6f6;
-  --bg-color-secondary: #c3c3c3;
+  --bg-color-primary: #f1f1f1;
+  --bg-color-secondary: rgba(235, 235, 235, 0.5);
   --text-primary: #111;
-  --text-secondary: #3b3b3b;
-  --cta-primary: #1515b6;
-  --cta-secondary: #2424e4;
+  --text-secondary: #333;
+  --cta-primary: #0ab635;
   --box-color: #e4e4e4;
-  --border-color: #0c9;
-  --box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+  --highlight: #6c6;
+  --box-shadow: 2px 2px 2px rgba(34, 34, 34, 0.3),
+    2px 2px 2px rgba(34, 34, 34, 0.3);
 }
 
 /* -- Dark Mode -- */
 [data-theme-color="dark"] {
-  --bg-color-primary: #111;
-  --bg-color-secondary: #3b3b3b;
-  --text-primary: #f6f6f6;
-  --text-secondary: #c3c3c3;
-  --cta-primary: #1515b6;
-  --cta-secondary: #2424e4;
+  --bg-color-primary: #010116;
+  --bg-color-secondary: #0a0a1f;
+  --text-primary: #001;
+  /* --text-white: #001; */
+  --text-secondary: #f6f6f6;
+  --cta-primary: #00d46a;
+  --box-color: #11111f;
+  --highlight: #0c9;
+  --box-shadow: 2px 2px 2px rgba(98, 98, 98, 0.3),
+    2px 2px 2px rgba(98, 98, 98, 0.3);
 }
 
 /* Theme switch */
@@ -38,9 +42,14 @@
 
 .brighten {
   display: none;
+  cursor: pointer;
 }
 
 #toggle-switch {
+  display: none;
+}
+
+.light-logo {
   display: none;
 }
 
@@ -49,12 +58,13 @@ html {
 }
 
 a {
-  color: #000;
+  /* color: var(--text-primary); */
+  color: var(--text-secondary);
   text-decoration: none;
 }
 
 sup {
-  color: #0c9;
+  color: var(--highlight);
   font-size: 0.55rem;
 }
 
@@ -69,7 +79,7 @@ sup {
 }
 
 .scroll-btn {
-  background-color: #0c9;
+  background-color: var(--highlight);
   border-radius: 50%;
   color: #f6f6f6;
   display: flex;
@@ -91,7 +101,7 @@ sup {
 }
 
 .scroll-btn:hover {
-  background-color: #3c9;
+  background-color: var(--cta-primary);
 }
 
 .scroll-btn:hover i {
@@ -109,16 +119,11 @@ sup {
   cursor: pointer;
   font-size: 2rem;
   font-weight: bold;
-}
-
-.hamburger-menu {
   position: relative;
-  display: none;
-  cursor: pointer;
 }
 
 .hamburger-menu .bar {
-  background-color: #000;
+  background-color: var(--text-primary);
   transition: 0.5s;
   width: 2.1rem;
   height: 3px;
@@ -131,7 +136,7 @@ sup {
   width: 2.1rem;
   height: 3px;
   border-radius: 3px;
-  background-color: #000;
+  background-color: var(--text-primary);
   transition: 0.5s;
 }
 
@@ -150,7 +155,7 @@ sup {
   }
 
   nav ul li {
-    padding: 0px 12px !important;
+    padding: 0px !important;
   }
 
   .about {
@@ -164,6 +169,7 @@ sup {
 
   main {
     height: auto !important;
+    /* overflow-x: hidden !important; */
   }
 
   .left {
@@ -234,7 +240,7 @@ sup {
   }
 
   .theme-switch {
-    padding-top: 20px;
+    padding-top: 35px;
   }
 
   .hamburger-menu {
