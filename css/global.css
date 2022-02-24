@@ -32,23 +32,16 @@
 
 /* Theme switch */
 .theme-switch {
-  display: flex;
-  align-items: center;
-  /* display: inline-block;
-  width: 0px; */
+  cursor: pointer;
+  margin-left: 10px;
 }
 
-/* .brighten {
-  margin-top: -150px;
-   transform: rotate(10deg);
-} */
-
-#toggle-switch {
+.brighten {
   display: none;
 }
 
-#switch:checked + .theme-icons .moon {
-  transform: rotate(250deg);
+#toggle-switch {
+  display: none;
 }
 
 html {
@@ -85,17 +78,15 @@ sup {
   font-size: 1.8rem;
   position: fixed;
   right: 32px;
-  bottom: -40px;
+  bottom: -80px;
   width: 50px;
   height: 50px;
-  transition: all 0.6s ease-out;
-  visibility: hidden;
+  transition: all 0.6s ease;
 }
 
 .scroll-btn.active {
   pointer-events: auto;
   bottom: 25px;
-  visibility: visible;
   opacity: 1;
 }
 
@@ -163,7 +154,7 @@ sup {
   }
 
   .about {
-    padding: 0 80px;
+    padding: 0 80px !important;
   }
 
   .about-container {
@@ -331,6 +322,10 @@ sup {
     margin-top: 60px !important;
   }
 
+  .left span {
+    font-size: 1rem !important;
+  }
+
   .left h1 {
     font-size: 2.8rem !important;
   }
@@ -374,6 +369,10 @@ sup {
     margin: 0 5px !important;
   }
 
+  .project {
+    padding: 30px 0 !important;
+  }
+
   .project-box {
     max-height: 240px !important;
   }
@@ -394,8 +393,8 @@ sup {
     font-size: 0.45rem !important;
   }
 
-  .project-link {
-    font-size: 0.3px !important;
+  .project-link img {
+    width: 25px !important;
   }
 
   .article {

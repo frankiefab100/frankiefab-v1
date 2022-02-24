@@ -34,7 +34,7 @@ nav ul {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 ul li {
@@ -79,13 +79,6 @@ nav a:hover {
   color: inherit;
 }
 
-.theme-switch {
-  cursor: pointer;
-  margin-left: 10px;
-  align-self: center;
-  margin-bottom: 10px;
-}
-
 /* -- Main -- */
 main {
   background-color: var(--bg-color-secondary);
@@ -99,7 +92,7 @@ main {
 .hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 160px 80px 0px;
   /* overflow-x: hidden; */
 }
@@ -291,8 +284,8 @@ main {
 }
 
 .project-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   margin-bottom: 20px;
   padding: 0 40px;
 }
@@ -356,8 +349,8 @@ main {
 .project-link img {
   background-color: #fff;
   border-radius: 10px;
-  font-size: 5px;
   padding: 4px;
+  width: 30px;
 }
 
 .project-box {
@@ -474,16 +467,17 @@ main {
 
 /* -- Contact -- */
 .contact {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   align-items: center;
   margin: 60px 80px;
 }
 
-.form-container {
+/* .form-container {
   display: flex;
   flex-direction: column;
-}
+} */
+
 .form-text {
   text-align: center;
 }
@@ -497,10 +491,10 @@ main {
 #contact-form {
   background-color: #e4e2e2;
   border: 1px solid #222;
-  border-radius: 5px;
-  display: block;
+  border-radius: 10px;
+  /* display: block; */
   max-width: 600px;
-  padding: 15px;
+  padding: 20px 15px;
   margin: 0 auto 50px;
 }
 
@@ -538,8 +532,7 @@ textarea #message {
   color: #fff;
   cursor: pointer;
   font-size: 1rem;
-  margin-top: 10px;
-  padding: 10px 0;
+  padding: 12px 0;
   width: 100%;
 }
 
@@ -557,6 +550,10 @@ footer {
 
 .footer-socials img {
   width: 20px;
+}
+
+.footer-socials a {
+  padding: 2px;
 }
 
 .copyright {

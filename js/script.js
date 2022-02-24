@@ -8,7 +8,7 @@ const scrollup = document.querySelector(".scroll-btn");
 hamburgerMenu.addEventListener("click", () => {
   navMenu.classList.toggle("active");
   hamburgerMenu.classList.toggle("active");
-  document.body.classList.add("stop-scroll");
+  document.body.classList.toggle("stop-scroll");
 });
 
 // Close Hamburger Menu
@@ -43,14 +43,20 @@ function changeTheme(e) {
 
 themeSwitch.addEventListener("change", changeTheme, false);
 
-//  Save selected Mode for future
+//  Save selected Mode in Local Storage
 function changeTheme(e) {
+  const lightSwitch = document.querySelector(".brighten");
+  const darkSwitch = document.querySelector(".darken");
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme-color", "dark");
     localStorage.setItem("theme", "dark");
+    darkSwitch.style.display = "none";
+    lightSwitch.style.display = "block";
   } else {
     document.documentElement.setAttribute("data-theme-color", "light");
     localStorage.setItem("theme", "light");
+    darkSwitch.style.display = "block";
+    lightSwitch.style.display = "none";
   }
 }
 
