@@ -20,6 +20,7 @@ function closeMenu() {
   document.body.classList.remove("stop-scroll");
 }
 
+// const header = document.querySelector(".header")
 window.addEventListener("scroll", () => {
   if (window.pageYOffset >= 50) {
     scrollup.classList.add("active");
