@@ -43,7 +43,7 @@ function changeTheme(e) {
 
 themeSwitch.addEventListener("change", changeTheme, false);
 
-//  Save selected Mode in Local Storage
+//  Save selected mode in Local Storage
 function changeTheme(e) {
   const lightSwitch = document.querySelector(".brighten");
   const darkSwitch = document.querySelector(".darken");
@@ -70,7 +70,7 @@ function changeTheme(e) {
   }
 }
 
-// Save Mode on load
+// Save mode on reload
 const selectedTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
   : null;
@@ -82,3 +82,13 @@ if (selectedTheme) {
     themeSwitch.checked = true;
   }
 }
+
+// Filter Projects by category
+const mixer = mixitup(".projects", {
+  selectors: {
+    target: ".project-box",
+  },
+  animation: {
+    duration: 350,
+  },
+});

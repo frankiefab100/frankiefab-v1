@@ -13,9 +13,10 @@
   --bg-color-secondary: rgba(235, 235, 235, 0.5);
   --text-primary: #111;
   --text-secondary: #333;
+  --color-white: #f2f2f2;
   --cta-primary: #0ab635;
   --box-color: #e4e4e4;
-  --highlight: #6c6;
+  --highlight: #47b147;
   --box-shadow: 2px 2px 2px rgba(34, 34, 34, 0.3),
     2px 2px 2px rgba(34, 34, 34, 0.3);
 }
@@ -25,10 +26,10 @@
   --bg-color-primary: #010116;
   --bg-color-secondary: #0a0a1f;
   --text-primary: #001;
-  /* --text-white: #001; */
+  --color-white: #f6f6f6;
   --text-secondary: #f6f6f6;
   --cta-primary: #00d46a;
-  --box-color: #11111f;
+  --box-color: #0a0a1a;
   --highlight: #0c9;
   --box-shadow: 2px 2px 2px rgba(98, 98, 98, 0.3),
     2px 2px 2px rgba(98, 98, 98, 0.3);
@@ -58,7 +59,6 @@ html {
 }
 
 a {
-  /* color: var(--text-primary); */
   color: var(--text-secondary);
   text-decoration: none;
 }
@@ -79,9 +79,9 @@ sup {
 }
 
 .scroll-btn {
-  background-color: var(--highlight);
+  background-color: var(--cta-primary);
   border-radius: 50%;
-  color: #f6f6f6;
+  color: var(--color-white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +91,7 @@ sup {
   bottom: -80px;
   width: 50px;
   height: 50px;
-  transition: all 0.6s ease;
+  transition: all 0.5s ease;
 }
 
 .scroll-btn.active {
@@ -101,11 +101,10 @@ sup {
 }
 
 .scroll-btn:hover {
-  background-color: var(--cta-primary);
+  background-color: var(--highlight);
 }
 
 .scroll-btn:hover i {
-  color: #f6f6f6;
   transform: translateY(-5px);
 }
 
@@ -123,7 +122,7 @@ sup {
 }
 
 .hamburger-menu .bar {
-  background-color: var(--text-primary);
+  background-color: var(--text-secondary);
   transition: 0.5s;
   width: 2.1rem;
   height: 3px;
@@ -136,7 +135,7 @@ sup {
   width: 2.1rem;
   height: 3px;
   border-radius: 3px;
-  background-color: var(--text-primary);
+  background-color: var(--text-secondary);
   transition: 0.5s;
 }
 
@@ -155,7 +154,7 @@ sup {
   }
 
   nav ul li {
-    padding: 0px !important;
+    margin: 0 10px !important;
   }
 
   .about {
@@ -169,7 +168,6 @@ sup {
 
   main {
     height: auto !important;
-    /* overflow-x: hidden !important; */
   }
 
   .left {
@@ -183,6 +181,16 @@ sup {
   .background {
     padding-left: 0px !important;
     margin-top: 20px;
+  }
+
+  .project-text {
+    top: 12px !important;
+  }
+
+  .tools {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -203,7 +211,7 @@ sup {
     position: absolute;
     margin: 0px;
     top: 0;
-    height: 600px;
+    height: 700px;
     width: 100%;
     right: -820px;
     transition: all 0.5s ease-in-out;
@@ -213,9 +221,8 @@ sup {
     margin-right: 0 !important;
   }
 
-  ul li {
-    margin-top: 40px;
-    padding: 0 30px !important;
+  nav ul li {
+    padding: 20px 0 !important;
   }
 
   nav ul.active {
@@ -299,6 +306,7 @@ sup {
   .tools ul li {
     padding: 0px !important;
     margin-top: 5px !important;
+    font-size: 0.9rem;
   }
 
   .projects {
