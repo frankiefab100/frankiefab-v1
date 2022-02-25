@@ -159,7 +159,9 @@ main {
 
 .about-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .photo {
@@ -263,6 +265,7 @@ main {
   padding: 60px 0;
   text-align: center;
   margin-top: 20px;
+  width: 100%;
 }
 
 .filter {
