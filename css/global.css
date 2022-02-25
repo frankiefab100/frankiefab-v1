@@ -50,8 +50,13 @@
   display: none;
 }
 
-.light-logo {
-  display: none;
+.darklogo {
+  background-color: var(--text-secondary);
+  mask-size: 10%;
+  mask-repeat: no-repeat;
+  mask-position: left;
+  cursor: pointer;
+  mask-image: url(../assets/images/icons/logo.svg);
 }
 
 html {

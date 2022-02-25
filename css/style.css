@@ -356,13 +356,18 @@ main {
 .project-link a {
   display: flex;
   padding: 5px;
+  color: var(--color-white);
 }
 
-.project-link img {
-  background-color: var(--color-white);
-  border-radius: 10px;
-  padding: 4px;
-  width: 30px;
+.project-link a .fab,
+.project-link .fas {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-link a .fab:hover,
+.fas:hover {
+  color: var(--highlight);
 }
 
 .project-box {
