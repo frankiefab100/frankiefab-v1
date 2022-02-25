@@ -50,13 +50,8 @@
   display: none;
 }
 
-.darklogo {
-  background-color: var(--text-secondary);
-  mask-size: 30px;
-  mask-repeat: no-repeat;
-  mask-position: left;
-  cursor: pointer;
-  mask-image: url(../assets/images/icons/logo.svg);
+.light-logo {
+  display: none;
 }
 
 html {
@@ -216,24 +211,22 @@ sup {
     position: absolute;
     margin: 0px;
     top: 0;
+    right: -618px;
     height: 700px;
     width: 100%;
     transition: all 0.5s ease-in-out;
   }
 
-  nav ul {
-    margin-right: 0 !important;
-  }
-
   nav ul li {
-    padding: 20px 0 !important;
+    /* padding: 20px 0; */
+    padding: 0 0 40px;
   }
 
   nav ul.active {
     position: absolute;
     right: 0;
-    margin-right: 0;
-    /* margin-top: 72px; */
+    /* margin-right: 0; */
+    margin-top: 72px;
     opacity: 5;
   }
 
@@ -248,10 +241,6 @@ sup {
 
   .hamburger-menu.active .bar:after {
     transform: translateY(0) rotate(-45deg);
-  }
-
-  .theme-switch {
-    padding-top: 35px;
   }
 
   .hamburger-menu {
@@ -313,6 +302,11 @@ sup {
     font-size: 0.9rem;
   }
 
+  .filter-btn {
+    padding: 5px 8px !important;
+    margin: 0 5px !important;
+  }
+
   .projects {
     display: grid;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -328,16 +322,8 @@ sup {
 }
 
 @media (max-width: 500px) and (min-width: 350px) {
-  header {
-    overflow: hidden !important;
-  }
-
   nav {
     padding: 0 30px !important;
-  }
-
-  nav ul {
-    right: -500px !important;
   }
 
   .hero {
@@ -388,11 +374,6 @@ sup {
 
   .projects {
     padding: 20px 30px !important;
-  }
-
-  .filter-btn {
-    padding: 5px 8px !important;
-    margin: 0 5px !important;
   }
 
   .project {

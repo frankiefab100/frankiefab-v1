@@ -48,16 +48,25 @@ function changeTheme(e) {
   const lightSwitch = document.querySelector(".brighten");
   const darkSwitch = document.querySelector(".darken");
 
+  const lightLogo = document.querySelector(".light-logo");
+  const darkLogo = document.querySelector(".dark-logo");
+
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme-color", "dark");
     localStorage.setItem("theme", "dark");
     darkSwitch.style.display = "none";
     lightSwitch.style.display = "block";
+
+    darkLogo.style.display = "none";
+    lightLogo.style.display = "block";
   } else {
     document.documentElement.setAttribute("data-theme-color", "light");
     localStorage.setItem("theme", "light");
     darkSwitch.style.display = "block";
     lightSwitch.style.display = "none";
+
+    darkLogo.style.display = "block";
+    lightLogo.style.display = "none";
   }
 }
 
