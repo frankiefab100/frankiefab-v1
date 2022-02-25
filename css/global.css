@@ -52,7 +52,7 @@
 
 .darklogo {
   background-color: var(--text-secondary);
-  mask-size: 10%;
+  mask-size: 30px;
   mask-repeat: no-repeat;
   mask-position: left;
   cursor: pointer;
@@ -218,7 +218,6 @@ sup {
     top: 0;
     height: 700px;
     width: 100%;
-    right: -820px;
     transition: all 0.5s ease-in-out;
   }
 
@@ -234,7 +233,7 @@ sup {
     position: absolute;
     right: 0;
     margin-right: 0;
-    margin-top: 72px;
+    /* margin-top: 72px; */
     opacity: 5;
   }
 
@@ -329,8 +328,16 @@ sup {
 }
 
 @media (max-width: 500px) and (min-width: 350px) {
+  header {
+    overflow: hidden !important;
+  }
+
   nav {
     padding: 0 30px !important;
+  }
+
+  nav ul {
+    right: -500px !important;
   }
 
   .hero {

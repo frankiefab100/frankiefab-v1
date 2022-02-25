@@ -34,6 +34,7 @@ nav ul {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  right: -680px;
 }
 
 nav ul li {
