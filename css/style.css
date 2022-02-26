@@ -468,6 +468,12 @@ main {
   margin-bottom: 15px;
 }
 
+.readmore {
+  color: var(--box-shadow);
+  font-size: 0.8rem;
+  text-decoration: none !important;
+}
+
 .blog-btn,
 .project-btn {
   background-color: var(--text-primary);
@@ -508,7 +514,7 @@ main {
 
 #contact-form {
   border: 2px solid var(--text-secondary);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 20px 15px;
   margin: 0 auto 50px;
   max-width: 600px;
