@@ -23,7 +23,7 @@ function closeMenu() {
 // Activate Scroll Button
 function showScrollBtn() {
   window.addEventListener("scroll", (e) => {
-    if (window.scrollY >= window.innerHeight * 0.8) {
+    if (window.scrollY > 200) {
       scrollupBtn.classList.add("active");
     } else {
       scrollupBtn.classList.remove("active");
