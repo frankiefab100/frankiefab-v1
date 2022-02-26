@@ -33,18 +33,18 @@ function showScrollBtn() {
 
 window.addEventListener("scroll", showScrollBtn);
 
-scrollupBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  // scrollUp();
-  function scrollUp() {
+function scrollUp() {
     let rootElement =
       document.documentElement.scrollTop || document.body.scrollTop;
 
     if (rootElement > 0) {
       window.requestAnimationFrame(scrollUp);
-      window.scrollTo(0, 0);
+      window.scrollTo(0, rootElement - rootElement / 10);
     }
-  }
+}
+
+scrollupBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   scrollUp();
 });
 
