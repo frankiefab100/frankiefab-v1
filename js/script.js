@@ -39,7 +39,7 @@ function scrollUp() {
 
     if (rootElement > 0) {
       window.requestAnimationFrame(scrollUp);
-      window.scrollTo(0, rootElement - rootElement / 10);
+      window.scrollTo(0,0);
     }
 }
 
