@@ -2,7 +2,7 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navBar = document.querySelector("nav");
 const navMenu = document.querySelector(".nav-links");
 const navItem = document.querySelectorAll(".nav-links li");
-const scrollup = document.querySelector(".scroll-btn");
+const scrollupBtn = document.querySelector(".scroll-btn");
 
 // Show Hamburger Menu
 hamburgerMenu.addEventListener("click", () => {
@@ -20,13 +20,32 @@ function closeMenu() {
   document.body.classList.remove("stop-scroll");
 }
 
-// const header = document.querySelector(".header")
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset >= 50) {
-    scrollup.classList.add("active");
-  } else {
-    scrollup.classList.remove("active");
+// Activate Scroll Button
+function showScrollBtn() {
+  window.addEventListener("scroll", (e) => {
+    if (window.scrollY >= window.innerHeight * 0.8) {
+      scrollupBtn.classList.add("active");
+    } else {
+      scrollupBtn.classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", showScrollBtn);
+
+scrollupBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  // scrollUp();
+  function scrollUp() {
+    let rootElement =
+      document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (rootElement > 0) {
+      window.requestAnimationFrame(scrollUp);
+      window.scrollTo(0, 0);
+    }
   }
+  scrollUp();
 });
 
 // Dark Mode Theme Switch
