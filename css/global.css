@@ -73,7 +73,7 @@ sup {
   padding-left: 12px;
 }
 
-.scroll-btn {
+#scroll-btn {
   background-color: var(--cta-primary);
   border-radius: 50%;
   color: var(--color-white);
@@ -92,11 +92,11 @@ sup {
   bottom: 25px;
 }
 
-.scroll-btn:hover {
+#scroll-btn:hover {
   background-color: var(--highlight);
 }
 
-.scroll-btn:hover i {
+#scroll-btn:hover i {
   transform: translateY(-5px);
 }
 
