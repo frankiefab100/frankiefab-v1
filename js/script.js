@@ -22,8 +22,11 @@ function closeMenu() {
 
 // Activate Scroll Button
 function showScrollBtn() {
-  window.addEventListener("scroll", (e) => {
-    if (window.scrollY >= window.innerHeight * 0.8) {
+  window.addEventListener("scroll", () => {
+    if (
+      window.scrollY >= window.innerHeight * 0.8 ||
+      window.pageYOffset > 300
+    ) {
       scrollupBtn.classList.add("display");
     } else {
       scrollupBtn.classList.remove("display");
@@ -33,22 +36,22 @@ function showScrollBtn() {
 
 window.addEventListener("scroll", showScrollBtn);
 
+function scrollUp() {
+  let rootElement =
+    document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (rootElement > 0) {
+    window.requestAnimationFrame(scrollUp);
+    window.scrollTo(0, 0);
+  }
+}
+
 scrollupBtn.addEventListener("click", (e) => {
   e.preventDefault();
-
-  function scrollUp() {
-    let rootElement =
-      document.documentElement.scrollTop || document.body.scrollTop;
-
-    if (rootElement > 0) {
-      window.requestAnimationFrame(scrollUp);
-      window.scrollTo(0, 0);
-    }
-  }
   scrollUp();
 });
 
-//
+// Select Logo and Switch Elements
 const lightSwitch = document.querySelector(".brighten");
 const darkSwitch = document.querySelector(".darken");
 

@@ -44,12 +44,6 @@
 .hide {
   display: none;
 }
-/* 
-.brighten,
-.light-logo {
-  display: none;
-  cursor: pointer;
-} */
 
 #toggle-switch {
   display: none;
@@ -83,13 +77,9 @@ sup {
   background-color: var(--cta-primary);
   border-radius: 50%;
   color: var(--color-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.8rem;
   position: fixed;
   right: 32px;
-  bottom: -80px;
   width: 50px;
   height: 50px;
   transition: all 0.5s ease;
@@ -417,7 +407,7 @@ sup {
   }
 
   .project-text p {
-    font-size: 0.75rem !important;
+    font-size: 0.62rem !important;
   }
 
   .project-link img {
@@ -510,7 +500,7 @@ sup {
   }
 
   .project-text p {
-    font-size: 0.45rem !important;
+    font-size: 0.55rem !important;
   }
 
   .project-container {
