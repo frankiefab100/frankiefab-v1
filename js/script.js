@@ -21,27 +21,18 @@ function closeMenu() {
 }
 
 // Activate Scroll Button
-function showScrollBtn() {
-  window.addEventListener("scroll", () => {
-    if (
-      window.scrollY >= window.innerHeight * 0.8 ||
-      window.pageYOffset > 300
-    ) {
-      scrollupBtn.classList.add("display");
-    } else {
-      scrollupBtn.classList.remove("display");
-    }
-  });
-}
-
-window.addEventListener("scroll", showScrollBtn);
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= window.innerHeight * 0.8 || window.pageYOffset > 300) {
+    scrollupBtn.classList.add("display");
+  } else {
+    scrollupBtn.classList.remove("display");
+  }
+});
 
 function scrollUp() {
-  let rootElement =
-    document.documentElement.scrollTop || document.body.scrollTop;
+  let position = document.documentElement.scrollTop || document.body.scrollTop;
 
-  if (rootElement > 0) {
-    window.requestAnimationFrame(scrollUp);
+  if (position > 0) {
     window.scrollTo(0, 0);
   }
 }
