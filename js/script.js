@@ -99,6 +99,15 @@ if (selectedTheme) {
 }
 
 // Filter Projects by category
+const filterBtns = document.querySelectorAll(".filter-btn");
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    filterBtns.forEach((button) => button.classList.remove("active"));
+
+    e.target.classList.add("active");
+  });
+});
+
 const mixer = mixitup(".projects", {
   selectors: {
     target: ".project-box",
