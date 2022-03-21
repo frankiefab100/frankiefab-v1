@@ -2,7 +2,7 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 const navBar = document.querySelector("nav");
 const navMenu = document.querySelector(".nav-links");
 const navItem = document.querySelectorAll(".nav-links li");
-const scrollupBtn = document.querySelector("#scroll-btn");
+const scrollupBtn = document.querySelector(".scrollup");
 
 // Show Hamburger Menu
 hamburgerMenu.addEventListener("click", () => {

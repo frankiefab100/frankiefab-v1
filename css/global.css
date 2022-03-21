@@ -36,7 +36,7 @@
 }
 
 /* Theme switch */
-.theme-switch {
+.theme-icons > img {
   cursor: pointer;
   margin-left: 10px;
 }
@@ -73,9 +73,10 @@ sup {
   padding-left: 12px;
 }
 
-#scroll-btn {
+.scrollup {
   background-color: var(--cta-primary);
   border-radius: 50%;
+  cursor: pointer;
   color: var(--color-white);
   font-size: 1.8rem;
   position: fixed;
@@ -88,7 +89,7 @@ sup {
   transition: all 0.5s ease;
 }
 
-#scroll-btn:before {
+.scrollup:before {
   content: "";
   position: absolute;
   background-color: var(--highlight);
@@ -115,11 +116,11 @@ sup {
   }
 }
 
-#scroll-btn:hover {
+.scrollup:hover {
   background-color: var(--highlight);
 }
 
-#scroll-btn:hover i {
+.scrollup:hover i {
   transform: translateY(-5px);
 }
 
@@ -288,6 +289,10 @@ sup {
 
   .hamburger-menu {
     display: block;
+  }
+
+  .theme-icons {
+    margin-left: -10px;
   }
 
   main {

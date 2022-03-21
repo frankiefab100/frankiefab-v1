@@ -419,12 +419,16 @@ main {
   text-align: center;
 }
 
-.blog .title {
+.blog .text,
+.blog .subtitle {
   color: var(--color-white);
   text-align: center;
-  padding: 15px 0;
+  margin: 15px 0;
 }
 
+.blog .subtitle {
+  padding: 0 30px;
+}
 .article-wrapper {
   display: flex;
   flex-direction: row;
