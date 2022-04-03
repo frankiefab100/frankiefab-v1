@@ -11,9 +11,11 @@ body {
 
 /* -- Header -- */
 header {
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
+  width: 100%;
+  z-index: 99;
 }
 
 nav {
@@ -24,7 +26,7 @@ nav {
   align-items: center;
   width: 100%;
   height: 70px;
-  z-index: 99;
+  /* z-index: 99; */
   position: relative;
   padding: 0 80px;
 }
@@ -93,7 +95,7 @@ main {
 .hero {
   display: flex;
   align-items: center;
-  padding: 160px 80px 0px;
+  padding: 220px 80px 0px;
 }
 
 .hero::after {
@@ -307,7 +309,6 @@ main {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: minmax(250px, auto); */
   grid-gap: 1rem;
 }
 
@@ -407,6 +408,18 @@ main {
   background-image: url(../assets/images/projects/project-creditcard-form.jpg);
 }
 
+.project-box:nth-child(7) {
+  background-image: url(../assets/images/projects/project-currency-converter.JPG);
+}
+
+.project-box:nth-child(8) {
+  background-image: url(../assets/images/projects/project-Temperature-Converter.png);
+}
+
+.project-box:nth-child(9) {
+  background-image: url(../assets/images/projects/project-SOON.jpg);
+}
+
 /* -- Blog -- */
 .blog {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -429,6 +442,7 @@ main {
 .blog .subtitle {
   padding: 0 30px;
 }
+
 .article-wrapper {
   display: flex;
   flex-direction: row;
@@ -463,7 +477,7 @@ main {
 .article-title {
   color: var(--text-primary);
   font-family: "Roboto Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
@@ -588,20 +602,20 @@ footer {
   margin: 25px 0;
 }
 
-.footer-socials a {
-  padding-right: 5px;
+.footer-socials i {
+  padding: 5px;
   color: var(--text-secondary);
 }
 
-.footer-socials .fab {
+.footer-socials i {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
-.footer-socials .fab:hover {
+.footer-socials i:hover {
   border: 1.5px solid var(--highlight);
   border-radius: 5px;
-  padding: 4px;
+  padding: 3px;
 }
 
 .copyright {
