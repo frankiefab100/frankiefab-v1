@@ -360,11 +360,6 @@ sup {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 
-  /* Hide Upcoming project to ensure uniform grid */
-  .project-box:nth-child(9) {
-    display: none;
-  }
-
   .project-text {
     top: 15px !important;
   }
