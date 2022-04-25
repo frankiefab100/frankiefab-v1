@@ -94,7 +94,7 @@ main {
 .hero {
   display: flex;
   align-items: center;
-  padding: 220px 50px 0px;
+  padding: 220px 80px 0px;
 }
 
 .hero::after {
@@ -455,7 +455,8 @@ main {
   display: block;
   position: relative;
   object-fit: cover;
-  max-height: 200px;
+  min-height: 80px;
+  height: 250px;
   width: 100%;
 }
 

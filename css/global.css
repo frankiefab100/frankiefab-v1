@@ -198,6 +198,10 @@ sup {
     margin-bottom: 150px !important;
   }
 
+  .hero {
+    padding: 220px 50px 0px !important;
+  }
+
   .hero::after {
     display: none;
   }
@@ -422,10 +426,6 @@ sup {
 
   .tools li {
     font-size: 0.8rem !important;
-  }
-
-  .projects {
-    padding: 20px 30px !important;
   }
 
   .project {
