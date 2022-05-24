@@ -690,21 +690,25 @@
             Feel free to send me a message, I will definitely reply.
           </p>
         </div>
+
         <form
           id="contact-form"
-          action="https://formsubmit.co/699bf3c059ca389d13c52e4bb1875f2f"
+          name="contact"
+          action="./src/contact.html"
           method="POST"
+          data-netlify="true"
+          onSubmit="submit"
+          data-netlify-honeypot="bot-field"
         >
+          <input name="bot-field" style="display: none" />
           <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
+          <input type="text" name="name" id="name" name="name" required />
 
           <label for="subject">Subject</label>
-          <input type="text" name="subject" id="subject" />
+          <input type="text" name="subject" id="subject" name="subject" />
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" required />
-
-          <input type="hidden" name="_next" value="./src/contact.html" />
+          <input type="email" name="email" id="email" name="email" required />
 
           <label for="message">Message</label>
           <textarea
@@ -712,6 +716,7 @@
             id="message"
             placeholder="Type your message here..."
             rows="8"
+            name="message"
           ></textarea>
           <button class="contact-btn">SEND MESSAGE</button>
         </form>
