@@ -522,12 +522,13 @@ main {
 .form-text {
   color: var(--text-secondary);
   text-align: center;
+  padding-top: 30px;
 }
 
 .form-text p {
   font-family: "Roboto Mono", monospace;
   line-height: 1.5;
-  padding: 10px 0 20px;
+  padding: 5px 0 15px;
 }
 
 #contact-form {
