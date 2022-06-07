@@ -116,3 +116,9 @@ const mixer = mixitup(".projects", {
     duration: 350,
   },
 });
+
+// Scroll to Webpage with definite height
+document.documentElement.style.setProperty(
+  "--scroll-padding",
+  navBar.offsetHeight + "px"
+);

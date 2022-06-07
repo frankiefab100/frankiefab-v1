@@ -51,7 +51,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+  scroll-padding-top: var(--scroll-padding, 50px);
 }
 
 a:not(.readmore) {
