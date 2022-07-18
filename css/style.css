@@ -496,7 +496,7 @@ main {
 .project-btn {
   background-color: var(--text-primary);
   border: 1.5px solid var(--color-white);
-  color: var(--color-white);
+  color: var(--bg-color-primary);
   cursor: pointer;
   outline: none;
   text-align: center;
