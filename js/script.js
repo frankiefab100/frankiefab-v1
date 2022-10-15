@@ -122,3 +122,19 @@ document.documentElement.style.setProperty(
   "--scroll-padding",
   navBar.offsetHeight + "px"
 );
+
+// Animate on scroll
+const observer = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    console.log(item);
+
+    if (item.isIntersecting) {
+      item.target.classList.add("show");
+    } else {
+      item.classList.remove("show");
+    }
+  });
+});
+
+const hiddenElems = document.querySelectorAll(".hidden");
+hiddenElems.forEach((entry) => observer.observe(entry));
