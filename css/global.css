@@ -544,6 +544,29 @@ sup {
   }
 }
 
+@media (max-width: 455px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .project-text h3 {
+    font-size: 1.1em !important;
+  }
+
+  .project-text p {
+    font-size: 1em !important;
+  }
+
+  .project-text .stack {
+    font-size: 0.85em !important;
+  }
+
+  #contact-form {
+    border: none !important;
+    padding: 20px 0px !important;
+  }
+}
+
 @media (max-width: 349px) {
   nav {
     padding: 0 25px !important;
@@ -589,18 +612,6 @@ sup {
     margin: 0 2px !important;
   }
 
-  .projects {
-    grid-gap: 0.8rem !important;
-  }
-
-  .project-box {
-    max-height: 180px !important;
-  }
-
-  .project-text p {
-    font-size: 0.55rem !important;
-  }
-
   .project-container {
     padding: 0 25px !important;
   }
@@ -626,11 +637,6 @@ sup {
 
   .contact {
     margin: 30px 25px !important;
-  }
-
-  #contact-form {
-    padding: 10px 12px !important;
-    margin: 0 auto 40px !important;
   }
 
   label {
